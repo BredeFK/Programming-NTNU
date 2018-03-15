@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab01</string>
+    <string name="Button_Send">Send</string>
+    <string name="Text_Hint">Enter a message</string>
+    <string name="Button_BackSend">Back</string>
+    <string name="Button_Next">Next</string>
+</resources>
