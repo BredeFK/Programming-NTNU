@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab02</string>
+    <string name="A2">Display</string>
+    <string name="A3">Settings</string>
+    <string name="limit">Item limit:</string>
+    <string name="URL">https://www.vg.no/rss/feed</string>
+    <string name="A1">List</string>
+    <string name="save">Save</string>
+    <string name="support">(RSS2.0 and/or atom supported)</string>
+    <string name="refresh">Refresh</string>
+    <string name="fetch">Refresh:</string>
+</resources>
