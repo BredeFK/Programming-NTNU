@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -36,11 +37,13 @@ public class A3_preference extends AppCompatActivity implements AdapterView.OnIt
         spnRefresh = findViewById(R.id.spn_refresh);
         spnLimit = findViewById(R.id.spn_limit);
         txtURL = findViewById(R.id.txt_URL);
+
         spnRefresh.setAdapter(adapter_r);
-        spnLimit.setAdapter(adapter_l);
         spnRefresh.setOnItemSelectedListener(this);
-        spnLimit.setOnItemSelectedListener(this);
         spnRefresh.setSelection(selected.getInt("selectedRefresh", 0));
+
+        spnLimit.setAdapter(adapter_l);
+        spnLimit.setOnItemSelectedListener(this);
         spnLimit.setSelection(selected.getInt("selectedLimit", 0));
     }
 
@@ -110,6 +113,7 @@ public class A3_preference extends AppCompatActivity implements AdapterView.OnIt
                     break;
             }
             intent.putExtra("address", urlResult);
+            Log.d("RESULT A3 URL", urlResult);
             intent.putExtra("refresh", refresh);
             intent.putExtra("limit", limit);
             setResult(Activity.RESULT_OK, intent);

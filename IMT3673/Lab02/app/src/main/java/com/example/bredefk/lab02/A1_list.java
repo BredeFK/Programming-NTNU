@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -32,6 +33,7 @@ public class A1_list extends AppCompatActivity {
     private static URL url;
     private Intent intent;
     private ListView listview;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private Adapter listAdapter;
     private String rssURL;
     private RssFeedModel selected;
@@ -58,20 +60,23 @@ public class A1_list extends AppCompatActivity {
             listen();
             Feed.run();
         }
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                if (!ADDRESS.equals(empty)) {
+                    new FetchFeedTask().execute();
+                } else {
+                    Toast.makeText(A1_list.this, "Nothing to refresh", Toast.LENGTH_SHORT).show();
+                }
+                swipeRefreshLayout.setRefreshing(false); // This has to be here so the loading icon goes away after it's done :)
+            }
+        });
     }
 
     public void changeActivity(View view) {
         Intent intent = new Intent(A1_list.this, A3_preference.class);
         startActivity(intent);
-    }
-
-    public void refresh(View view) {
-        if (!ADDRESS.equals(empty)) {
-            Toast.makeText(A1_list.this, "Refreshing...", Toast.LENGTH_LONG).show();
-            new FetchFeedTask().execute();
-        } else {
-            Toast.makeText(A1_list.this, "Nothing to refresh", Toast.LENGTH_LONG).show();
-        }
     }
 
     @Override
@@ -95,6 +100,7 @@ public class A1_list extends AppCompatActivity {
     private void getVariables() {
         SharedPreferences saved = getPreferences(0);
         listview = findViewById(R.id.content);
+        swipeRefreshLayout = findViewById(R.id.swipweRefresh);
         extras = getIntent().getExtras();
         if (extras != null) {
             ADDRESS = extras.getString("address");
