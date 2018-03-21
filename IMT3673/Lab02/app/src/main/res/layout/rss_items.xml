@@ -28,7 +28,7 @@
         android:layout_below="@id/txt_title"
         android:fontFamily="sans-serif-smallcaps"
         android:maxLines="1"
-        android:textColor="@color/ic_launcher_background"
+        android:textColor="@color/link_blue"
         android:textSize="10sp"
         android:textStyle="italic" />
 </RelativeLayout>
