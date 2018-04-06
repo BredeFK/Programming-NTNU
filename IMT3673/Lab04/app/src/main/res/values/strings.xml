@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Lab04</string>
+    <string name="to">To</string>
+    <string name="message">Type message…</string>
+    <string name="send">Send</string>
+    <string name="logout">Log out</string>
+    <string name="register">Register</string>
+    <string name="name">Nickname</string>
+    <string name="save">Save</string>
+    <string name="nick">Your nickname:</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signIn">Sign in</string>
+    <string name="createNickname">Create Nickname</string>
+    <string name="createUser">Create User</string>
+    <string name="action_settings">Settings</string>
+    <string name="user">User</string>
+    <string name="mainFeed">Main Feed</string>
+    <string name="userList">User List</string>
+    <string name="loadedNewestMessages">Loaded newest messages…</string>
+    <string name="loadedNewestUsers">Loaded newest users…</string>
+    <string name="showingMessages">Showing all messages of</string>
+    <string name="newMessageFrom">New message from </string>
+    <string name="emptyEmail">Email can not be empty!</string>
+    <string name="emptyPassword">Password can not be empty!</string>
+    <string name="emptyNickname">Nickname can not be empty!</string>
+    <string name="maxNickname">Nickname can not be longer than</string>
+    <string name="characters">characters!</string>
+    <string name="hello">Hello</string>
+    <string name="maxMessage">Message can not be longer than</string>
+    <string name="orEmpty">or empty!</string>
+    <string name="authenticationFailed">Authentication failed</string>
+</resources>
