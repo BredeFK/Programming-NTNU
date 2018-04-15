@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab04</string>
+    <string name="to">Til</string>
+    <string name="message">Skriv melding…</string>
+    <string name="send">Send</string>
+    <string name="logout">Logg ut</string>
+    <string name="register">Registrer</string>
+    <string name="name">Kallenavn</string>
+    <string name="save">Lagre</string>
+    <string name="nick">Ditt kallenavn:</string>
+    <string name="email">Epost</string>
+    <string name="password">Passord</string>
+    <string name="signIn">Logg inn</string>
+    <string name="createNickname">Lag Kallenavn</string>
+    <string name="createUser">Lag bruker</string>
+    <string name="action_settings">Instillinger</string>
+    <string name="user">Bruker</string>
+    <string name="mainFeed">Hoved Feed</string>
+    <string name="userList">Bruker Liste</string>
+    <string name="loadedNewestMessages">Lastet in nyeste meldinger…</string>
+    <string name="loadedNewestUsers">Lastet inn nyeste brukere…</string>
+    <string name="showingMessages">Viser alle meldingene til</string>
+    <string name="newMessageFrom">Ny melding fra</string>
+    <string name="emptyEmail">Epost kan ikke være tomt!</string>
+    <string name="emptyPassword">Passord kan ikke være tomt!</string>
+    <string name="emptyNickname">Kallenavn kan ikke være tomt!</string>
+    <string name="maxNickname">Kallenavn kan ikke være lenger enn</string>
+    <string name="characters">tegn!</string>
+    <string name="authenticationFailed">Autentisering feilet</string>
+    <string name="hello">Hallo</string>
+    <string name="maxMessage">Melding kan ikke være lenger enn</string>
+    <string name="orEmpty">eller tom!</string>
+</resources>
