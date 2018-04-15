@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1089005225134",
+    "firebase_url": "https://mobildedev.firebaseio.com",
+    "project_id": "mobildedev",
+    "storage_bucket": "mobildedev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089005225134:android:694c8fdaf0395180",
+        "android_client_info": {
+          "package_name": "fritjof.lab04"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089005225134-u5s7m8r1il2j0ddbbnl0o3gkfu8psjpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiN4jmfW6iI5xEksY4XTmkUh2FghAMpac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
